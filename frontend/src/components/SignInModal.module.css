@@ -1,0 +1,44 @@
+.close{
+ margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: 2px solid gray;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.login{
+      background: #28a745;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.login:hover{
+      background-color: #367f39;
+}
+input{
+      box-sizing: border-box;
+}
+.close:hover{
+      background-color: rgb(68, 68, 68);
+      color: white;
+      border: 2px solid rgb(68, 68, 68);
+     
+}
+
+.forgotPassword{
+      color: rgb(116, 120, 0);
+      cursor: pointer;
+      margin-top: 0.5rem;
+}
+.forgotPassword:hover{
+      color: rgb(49, 51, 0);
+}

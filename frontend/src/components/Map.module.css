@@ -1,0 +1,27 @@
+.mapContainer {
+  height: 30rem;
+  width: 100%;
+  border: 5px solid cadetblue;
+  border-radius: 1rem;
+  overflow: hidden;
+  
+  position: relative; 
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.neighborInfo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popUp{
+  transition: all 0.2s ease;
+}
+.popUp:hover{
+  scale:1.05;
+}

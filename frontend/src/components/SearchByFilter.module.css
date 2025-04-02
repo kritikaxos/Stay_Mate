@@ -1,0 +1,106 @@
+.searchByFilter {
+  background: rgba(255, 255, 255, 0.91);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+width: 100%;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgb(232, 232, 232);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+
+.filterGroup {
+  
+  gap: 0.5rem;
+  color: rgb(36, 36, 36);
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(95, 158, 160, 0.2); 
+  width: auto;
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.filterGroup input,
+.filterGroup select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background: white;
+  width: 100%;
+}
+
+.filterGroup input[type="range"] {
+  cursor: pointer;
+}
+
+
+.searchByFilter button {
+  background: cadetblue;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchByFilter button:hover {
+  background: rgb(72, 128, 130);
+}
+.searchByFilter h4{
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .searchByFilter {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .filterGroup {
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+  .options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+.buttons button{
+ width: 100%;
+}

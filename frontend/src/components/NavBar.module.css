@@ -1,0 +1,163 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(172, 225, 225, 0.7), rgb(39, 148, 151), rgba(0, 50, 50, 0.894));
+    backdrop-filter: blur(2px);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.heading {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.options span {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+span:hover {
+    scale: 1.05;
+}
+
+.login, .signup {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.274);
+    color: white;
+}
+
+.signup {
+    background-color: rgba(255, 255, 255, 0.895);
+    color: black;
+}
+
+.signup:hover {
+    background-color: rgba(255, 255, 255, 0.961);
+}
+
+.login:hover {
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+/* User Image */
+.userImage {
+    height: 2.7rem;
+    width: 2.7rem;
+    border: 2px solid rgb(138, 179, 184);
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.userImage:hover {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* Button Groups */
+.authButtons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.loginButtons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .options {
+        gap: 1.5rem;
+    }
+    .options span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1.5rem;
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    .heading {
+        font-size: 1.8rem;
+    }
+    .options {
+        flex-direction: row;
+        gap: 1rem;
+        
+    }
+    .authButtons {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .login, .signup {
+        width: 100%;
+        text-align: center;
+        width: 5rem;
+        padding: 0.5rem 
+    }
+    .login p, .signup p{
+        font-size: 0.8rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1.5rem;
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .options {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .options span {
+        font-size: 1rem;
+    }
+    .userImage {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+}

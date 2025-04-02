@@ -1,0 +1,143 @@
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(237, 237, 237, 0.8);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  gap: 2rem;
+  margin: 1rem;
+  width: 90%;
+  max-width: 900px;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw; 
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.closeButton:hover{
+      background-color: rgba(255, 255, 255, 0.348);
+      scale: 1.06;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.profilePic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gender {
+  font-size: 16px;
+  color: gray;
+}
+
+.occupation {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bio {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 60%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.requestButton,
+.chatButton {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.requestButton {
+  background: #28a745;
+  color: white;
+}
+
+.chatButton {
+  background: #007bff;
+  color: white;
+}
+
+.requestButton:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .leftSection {
+    margin-bottom: 1rem;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+}
+.boldLabel {
+  font-weight: bold;
+}
+

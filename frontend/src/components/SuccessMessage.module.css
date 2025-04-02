@@ -1,0 +1,55 @@
+.message {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  border-bottom: none;
+  overflow: hidden; 
+  animation: fadeInOut 3.5s ease-in-out;
+  z-index: 3000;
+}
+
+/* Success Style */
+.success::after,
+.error::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+
+  animation: borderGrow 3.5s linear forwards;
+}
+
+/* Different colors for success and error */
+.success::after {
+  background-color: cadetblue;
+}
+
+.error::after {
+  background-color: rgb(196, 29, 29);
+}
+
+/* Fade In & Out Animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -10px); }
+}
+
+/* Border Animation (Left to Right) */
+@keyframes borderGrow {
+  0% { width: 0; }
+  100% { width: 100%; }
+}

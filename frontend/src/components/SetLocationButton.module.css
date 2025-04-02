@@ -1,0 +1,24 @@
+.button {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #383838;
+  color: rgb(240, 240, 240);
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

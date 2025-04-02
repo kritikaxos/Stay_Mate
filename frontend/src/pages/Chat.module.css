@@ -1,0 +1,133 @@
+.container {
+  margin: 2rem;
+  margin-top: 1rem;
+  background-color: #edffe3;
+  height: 100vh;
+  max-height: 47rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 8px rgba(200, 200, 200, 0.5);
+  display: flex;
+  border-radius: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.chatList {
+  list-style-type: none;
+  width: 35%;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  overflow-y: auto;
+  max-height: 42rem;
+}
+
+.chatList h1 {
+  margin-bottom: 1.5rem;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #444;
+}
+
+.chatList li {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.chatList li:hover {
+  background-color: #ececec;
+}
+
+.chatBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.chatBar img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chatBox {
+  width: 65%;
+  background-color: #f4f4f4;
+  height: 90%;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.inputText {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 0.8rem;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.send {
+  width: 15%;
+  padding: 0.5rem 1rem;
+  background-color: #228b0d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.send:hover {
+  background-color: #434190;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+
+  .chatList {
+    width: 100%;
+  }
+
+  .chatBox {
+    width: 100%;
+  }
+
+  .send {
+    width: 20%;
+  }
+}
