@@ -1,24 +1,33 @@
-Roommate Finder
-A full-stack web application that allows users to search for roommates and list available rooms based on location, price, and amenities. The platform includes authentication, interactive maps, and filtering options to find the best match.
+Roommate Finder is a comprehensive full-stack web application designed to streamline the process of finding and listing available rooms. Users can effortlessly search for roommates based on location, budget, and amenities while leveraging interactive features for an enhanced experience.
 
-Tech Stack 🛠️
-
+Technology Stack 🛠️
 Frontend:
-React.js (Vite) 
-React Context API for authentication
-Leaflet.js for interactive maps
-CSS Modules for styling
+React.js (Vite) – Fast and efficient development framework for seamless user interactions.
+
+React Context API – Secure authentication and state management.
+
+Leaflet.js – Dynamic, user-friendly interactive maps.
+
+CSS Modules – Modular styling for maintainable and scalable UI.
 
 Backend:
-Node.js + Express.js 
-MongoDB + Mongoose for database
-JWT Authentication (HTTP-only cookies)
+Node.js & Express.js – Scalable, high-performance backend framework.
 
-Features 
-✔️ User Authentication – Sign up, log in, and manage your account securely
-✔️ Post Rooms – List available rooms with photos, descriptions, and amenities
-✔️ Find Rooms – Search for nearby rooms using filters and an interactive map
-✔️ Notifications – Receive updates when someone sends a roommate request
-✔️ Image Uploads – Preview and manage uploaded photos before posting
-✔️ Location Picker – Automatically fetch or manually select location
+MongoDB & Mongoose – Flexible and powerful database management.
 
+JWT Authentication (HTTP-only cookies) – Secure user authentication and session handling.
+
+Key Features ✔️
+Secure User Authentication – Register, log in, and manage accounts with industry-standard security measures.
+
+Room Listings – Easily post available rooms with images, descriptions, and amenities for prospective roommates.
+
+Advanced Room Search – Intuitive filtering and interactive map integration for precise location-based searches.
+
+Real-Time Notifications – Receive instant updates on roommate requests and room availability.
+
+Image Upload & Management – Preview, edit, and organize photos before publishing listings.
+
+Location Selection – Automatically fetch or manually input location details for seamless room discovery.
+
+With Roommate Finder, users gain access to an intuitive platform designed to simplify the process of securing accommodations and finding compatible roommates. Whether listing a room or searching for one, the platform ensures a seamless experience.
